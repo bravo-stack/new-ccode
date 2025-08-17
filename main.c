@@ -3,10 +3,9 @@
 int main() {
     
     // check
-    char grade = 'A';
-    char value_sign = 'N';
+    char greeting[] = "Marhaban";
 
-    printf("here is your grade: %c", grade);
+    printf("%s, ya habibi: ", greeting);
 
     return 0;
 }
