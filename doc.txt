@@ -1,1 +1,16 @@
 Variable: A reusable container for a value. Behaves as if it were the value it contains.
+
+In C programming, %d and %f are format specifiers used primarily with functions like printf() and scanf() to indicate the data type of the variable being handled. The fundamental difference lies in the type of numbers they represent:
+%d (Decimal Integer):
+Used for signed integer values (whole numbers, positive or negative, without a fractional part).
+Examples: 5, -10, 0, 1000.
+When used with printf(), it displays the integer in base 10.
+When used with scanf(), it reads an integer value from the input.
+%f (Floating-Point Number):
+Used for floating-point values (numbers with a fractional part).
+Examples: 3.14, -0.5, 123.456.
+When used with printf(), it displays the floating-point number in standard decimal notation (e.g., 3.141593).
+When used with scanf(), it reads a floating-point value from the input. Note that for double precision floating-point numbers, %lf is typically preferred with scanf(), though %f can also be used for double with printf().
+
+In essence: %d is for whole numbers and %f is for numbers with decimal points.
+Using the incorrect format specifier for a given data type can lead to unexpected or incorrect output, or even program crashes, as the function will attempt to interpret the memory contents according to the specified type.
